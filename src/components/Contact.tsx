@@ -70,12 +70,6 @@ export const Contact = () => {
             </CardContent>
           </Card>
         </div>
-
-        <div className="text-center mt-12">
-          <p className="text-gray-600">
-            Built with ❤️ using React & Tailwind CSS
-          </p>
-        </div>
       </div>
     </section>
   );
