@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +91,41 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Particle animation */
+@keyframes particles {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #64748b;
+  animation: particles 10s linear infinite;
+}
+
+/* Glitch effect for text */
+@keyframes glitch {
+  0%, 74%, 100% {
+    transform: translate(0);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  76% {
+    transform: translate(-2px, 2px);
+  }
+  77% {
+    transform: translate(0);
   }
 }
