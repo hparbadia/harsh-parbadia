@@ -13,6 +13,13 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative px-6">
       <div className="text-center max-w-4xl mx-auto animate-fade-in">
         <div className="mb-8">
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="/lovable-uploads/6bcf2f64-0df6-4a23-813f-51c0bba75387.png" 
+              alt="Harshkumar Parbadia" 
+              className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-2xl border-4 border-white"
+            />
+          </div>
           <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent mb-6">
             Harshkumar Parbadia
           </h1>
