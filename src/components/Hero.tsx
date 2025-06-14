@@ -1,5 +1,7 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Linkedin, Github } from "lucide-react";
 
 export const Hero = () => {
   const [text, setText] = useState("");
@@ -36,11 +38,26 @@ export const Hero = () => {
           <span className="blinking-cursor">|</span>
         </p>
         <div className="space-x-4 animate-fade-in delay-400">
-          <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md hover:shadow-lg transition-shadow duration-300">
-            View Projects
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md hover:shadow-lg transition-shadow duration-300"
+            asChild
+          >
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Linkedin className="h-5 w-5" />
+              LinkedIn
+            </a>
           </Button>
-          <Button variant="outline" size="lg" className="text-gray-300 border-gray-600 hover:bg-gray-700 hover:border-blue-400 hover:text-blue-400 transition-colors duration-300">
-            Learn More
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-gray-300 border-gray-600 hover:bg-gray-700 hover:border-blue-400 hover:text-blue-400 transition-colors duration-300"
+            asChild
+          >
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Github className="h-5 w-5" />
+              GitHub
+            </a>
           </Button>
         </div>
       </div>
