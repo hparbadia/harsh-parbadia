@@ -49,7 +49,7 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-950">
+    <section id="skills" className="py-20 px-6 bg-black">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-slide-in-left">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 hover:text-blue-400 transition-colors duration-300">

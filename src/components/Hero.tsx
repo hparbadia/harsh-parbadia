@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -19,8 +20,15 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-16">
+    <section className="min-h-screen flex items-center justify-center px-6 pt-16 bg-black">
       <div className="max-w-4xl mx-auto text-center">
+        <div className="mb-8 animate-fade-in">
+          <img 
+            src="/lovable-uploads/27ab3987-5b54-4ba9-8461-38b5e3ef4653.png" 
+            alt="Harshkumar Parbadia" 
+            className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto mb-6 shadow-2xl border-4 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:scale-105"
+          />
+        </div>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
           Harshkumar Parbadia
         </h1>
