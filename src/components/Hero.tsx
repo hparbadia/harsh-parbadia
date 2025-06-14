@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin, Github, FileText } from "lucide-react";
 
 export const Hero = () => {
   const [text, setText] = useState("");
@@ -37,7 +37,7 @@ export const Hero = () => {
           {text}
           <span className="blinking-cursor">|</span>
         </p>
-        <div className="space-x-4 animate-fade-in delay-400">
+        <div className="flex flex-wrap justify-center gap-4 animate-fade-in delay-400">
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md hover:shadow-lg transition-shadow duration-300"
@@ -57,6 +57,17 @@ export const Hero = () => {
             <a href="https://github.com/hparbadia" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Github className="h-5 w-5" />
               GitHub
+            </a>
+          </Button>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-gray-300 border-gray-600 hover:bg-gray-700 hover:border-green-400 hover:text-green-400 transition-colors duration-300"
+            asChild
+          >
+            <a href="https://drive.google.com/file/d/15V8uSZQCF6sexlFdNm0H4CvEXPLOGWXn/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <FileText className="h-5 w-5" />
+              Resume
             </a>
           </Button>
         </div>
