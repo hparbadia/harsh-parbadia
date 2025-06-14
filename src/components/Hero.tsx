@@ -26,7 +26,7 @@ export const Hero = () => {
           <img 
             src="/lovable-uploads/27ab3987-5b54-4ba9-8461-38b5e3ef4653.png" 
             alt="Harshkumar Parbadia" 
-            className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto mb-6 shadow-2xl border-4 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:scale-105"
+            className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full mx-auto mb-6 shadow-2xl border-4 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:scale-105 object-cover"
           />
         </div>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
