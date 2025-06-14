@@ -9,42 +9,42 @@ export const Skills = () => {
       icon: Code,
       skills: ["Python", "JavaScript", "TypeScript", "Java", "C++", "SQL"],
       gradient: "from-blue-600 to-purple-600",
-      iconColor: "blue-400"
+      tagColor: "bg-blue-900/50 text-blue-300 border-blue-700 hover:border-blue-500"
     },
     {
       title: "Web Development",
       icon: Globe,
       skills: ["React.js", "Express.js", "Node.js", "HTML5", "CSS3", "Tailwind CSS"],
       gradient: "from-green-600 to-teal-600",
-      iconColor: "green-400"
+      tagColor: "bg-green-900/50 text-green-300 border-green-700 hover:border-green-500"
     },
     {
       title: "Data Science & AI",
       icon: Brain,
       skills: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "XGBoost", "Google Gemini"],
       gradient: "from-purple-600 to-pink-600",
-      iconColor: "purple-400"
+      tagColor: "bg-purple-900/50 text-purple-300 border-purple-700 hover:border-purple-500"
     },
     {
       title: "Databases",
       icon: Database,
       skills: ["PostgreSQL", "MongoDB", "Firebase", "NoSQL"],
       gradient: "from-orange-600 to-red-600",
-      iconColor: "orange-400"
+      tagColor: "bg-orange-900/50 text-orange-300 border-orange-700 hover:border-orange-500"
     },
     {
       title: "Design & Tools",
       icon: Palette,
       skills: ["Figma", "Postman", "Git", "Excel", "Project Management"],
       gradient: "from-cyan-600 to-blue-600",
-      iconColor: "cyan-400"
+      tagColor: "bg-cyan-900/50 text-cyan-300 border-cyan-700 hover:border-cyan-500"
     },
     {
       title: "Frameworks & Libraries",
       icon: Server,
       skills: ["Flask", "REST APIs", "Android Development", "Plotly", "NLP"],
       gradient: "from-indigo-600 to-purple-600",
-      iconColor: "indigo-400"
+      tagColor: "bg-indigo-900/50 text-indigo-300 border-indigo-700 hover:border-indigo-500"
     }
   ];
 
@@ -72,7 +72,7 @@ export const Skills = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2 justify-center">
                   {category.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className={`px-3 py-1 bg-gray-800/50 text-${category.iconColor.split('-')[0]}-300 rounded-full text-sm font-medium border border-gray-700 hover:border-${category.iconColor.split('-')[0]}-500 transition-colors duration-300`}>
+                    <span key={skillIndex} className={`px-3 py-1 rounded-full text-sm font-medium border transition-colors duration-300 ${category.tagColor}`}>
                       {skill}
                     </span>
                   ))}
