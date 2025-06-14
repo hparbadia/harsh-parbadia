@@ -1,10 +1,9 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "Full Stack Developer & Data Scientist";
+  const fullText = "Aspiring Software Developer";
 
   useEffect(() => {
     let index = 0;
