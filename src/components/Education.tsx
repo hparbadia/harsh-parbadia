@@ -1,4 +1,3 @@
-
 import { GraduationCap, Calendar, Award } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -8,16 +7,16 @@ export const Education = () => {
       school: "California State University - Long Beach",
       period: "August 2025 - May 2027",
       degree: "Bachelor's Degree in Computer Science",
-      status: "Upcoming",
-      statusColor: "from-green-600/20 to-emerald-600/20 border-green-500/30 text-green-300"
+      status: "Currently Enrolled",
+      statusColor: "from-blue-600/20 to-purple-600/20 border-blue-500/30 text-blue-300"
     },
     {
       school: "Long Beach City College",
       period: "August 2023 - May 2025",
       degree: "Associate Degree in Computer Science",
       gpa: "3.5",
-      status: "Currently Enrolled",
-      statusColor: "from-blue-600/20 to-purple-600/20 border-blue-500/30 text-blue-300"
+      status: "Graduated",
+      statusColor: "from-green-600/20 to-emerald-600/20 border-green-500/30 text-green-300"
     }
   ];
 
