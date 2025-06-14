@@ -40,7 +40,7 @@ export const Hero = () => {
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in delay-400">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="bg-gradient-to-r from-blue-500 via-blue-600 to-purple-600 text-white shadow-xl hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 hover:from-blue-400 hover:via-blue-500 hover:to-purple-500 border border-blue-400/20 backdrop-blur-sm"
             asChild
           >
             <a href="https://www.linkedin.com/in/harshkumarparbadia/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
@@ -49,9 +49,8 @@ export const Hero = () => {
             </a>
           </Button>
           <Button 
-            variant="outline" 
             size="lg" 
-            className="text-gray-300 border-gray-600 hover:bg-gray-700 hover:border-blue-400 hover:text-blue-400 transition-colors duration-300"
+            className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 text-white border border-gray-500/30 shadow-xl hover:shadow-2xl hover:shadow-gray-500/25 transition-all duration-300 hover:scale-105 hover:from-gray-700 hover:via-gray-600 hover:to-gray-500 backdrop-blur-sm"
             asChild
           >
             <a href="https://github.com/hparbadia" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
@@ -60,9 +59,8 @@ export const Hero = () => {
             </a>
           </Button>
           <Button 
-            variant="outline" 
             size="lg" 
-            className="text-gray-300 border-gray-600 hover:bg-gray-700 hover:border-green-400 hover:text-green-400 transition-colors duration-300"
+            className="bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 text-white shadow-xl hover:shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105 hover:from-green-500 hover:via-green-400 hover:to-emerald-400 border border-green-400/20 backdrop-blur-sm"
             asChild
           >
             <a href="https://drive.google.com/file/d/15V8uSZQCF6sexlFdNm0H4CvEXPLOGWXn/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
